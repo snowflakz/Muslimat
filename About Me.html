@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Ismail Muslimat Olajumoke</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Muslimat<span>.</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About Me.html">About Me</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Ismail Muslimat Olajumoke</span></h1>
+      <h2>Student of Accounting, Website Designer</h2>
+      <p>
+        I’m currently a final year Accounting student at the University of Ilorin, enrolled in the Uninspire program where I am learning web development using HTML, CSS, and JavaScript.
+        <br><br>
+        I combine creativity and accuracy — whether building clean, elegant websites or managing financial records.
+      </p>
+      <button class="main-btn" onclick="toggleText()">Click to Show Motto</button>
+      <p id="extraText" class="hidden">“Design with clarity. Count with accuracy.”</p>
+    </div>
+    <div class="hero-image">
+      <img src="images/Aminat 3.png" alt="Aminat Usman" />
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ismail Muslimat Olajumoke. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleText() {
+      const extraText = document.getElementById('extraText');
+      extraText.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
